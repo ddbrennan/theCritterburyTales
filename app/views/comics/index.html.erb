@@ -1,0 +1,17 @@
+<div class="search">
+  <%= form_tag("/comics", method: "get") do %>
+   <%= label_tag(:q, "Search by Book Title:") %>
+   <%= text_field_tag(:q) %>
+   <%= submit_tag("Search", class: "submit") %>
+  <% end %>
+</div>
+
+<% if current_user %>
+  <%= link_to "Add Comic", new_comic_path, class: "submit" %>
+<% end %>
+
+<ul class="display">
+<% @comics.each do |comic| %>
+  <li><%= link_to "#{comic.title} - #{comic.tag.name} - #{comic.created_at.strftime("%m/%d/%Y")}", comic %></li>
+<% end %>
+</ul>

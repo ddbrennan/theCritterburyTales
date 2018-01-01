@@ -1,0 +1,18 @@
+<div class="form_box">
+<%= form_for @comic do |f| %>
+  <%= f.text_field :title, class: "text_field", placeholder: "Comic Title" %><br><br>
+
+  <%= f.text_field :alt, class: "text_field", placeholder: "Alt Text" %><br><br>
+
+  <%= f.label :image, class: "label uploader" %>
+  <%= f.file_field :image, class: "image_field" %><br>
+
+  <%= f.fields_for :tag_attributes do |tag| %>
+    <%= tag.text_field :name, class: "text_field", placeholder: "Enter Book or Choose One Below" %>
+  <% end %>
+  <br>
+  <%= f.collection_select :tag_id, Tag.all, :id, :name , {:include_blank => true}, {:class => "drop_down"} %><br>
+
+  <%= f.submit "Add Comic", class: "submit" %>
+<% end %>
+</div>

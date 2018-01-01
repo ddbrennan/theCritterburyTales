@@ -1,0 +1,268 @@
+body {
+  color: rgb(40 60 46);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.center {
+  width: 70%;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.button {
+  position: fixed;
+  z-index: 5;
+  padding: 1%;
+  font-size: 1em;
+  width: 6%;
+}
+
+.prev {
+  left: 5%;
+  top: 50%;
+}
+
+.next {
+  right: 5%;
+  top: 50%;
+}
+
+.logout {
+  left: 1%;
+  bottom: 1%;
+  background-color: #111;
+}
+
+.logout a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.logout:hover {
+  background-color: #444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    width: 33%;
+    background-color: rgb(208, 203, 157);
+}
+
+li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+li a:hover {
+    background-color: rgb(178, 173, 127);
+    color: #EEE;
+}
+
+.submit {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(183, 145, 72);
+  color: #333;
+  padding: .75% 1.25%;
+  margin: auto;
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 4%;
+}
+
+.submit:hover {
+  background-color: rgb(123, 85, 12);
+  color: #EEE;
+}
+
+.label {
+  font-size: 1.5em;
+  margin: auto;
+  display: block;
+  padding: 1%;
+}
+
+.text_field {
+  width: 90%;
+  border: none;
+  font-size: 1.5em;
+  padding: .5%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(123, 85, 12);
+}
+
+.form_box {
+  background-color: rgb(208, 203, 157);
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+}
+
+.image_field {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.drop_down {
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border: solid;
+   border-color: #FFF;
+   border-width: 1%;
+   height: 3em;
+   width: 90%;
+   overflow: hidden;
+   margin: 2%;
+   padding: 2%;
+   font-size: 1em;
+   font-family: 'Raleway', sans-serif;
+   color: rgb(123, 85, 12);
+   background-image: url("arrow.png");
+   background-size: 8%;
+   background-repeat: no-repeat;
+   background-position: right center;
+
+}
+
+.drop_down select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+.uploader {
+    width: 90%;
+    color: white;
+    background-color: rgb(183, 145, 72);
+}
+
+.uploader:hover {
+  background-color: rgb(123, 85, 12);
+  color: #EEE;
+}
+
+.display {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.display li {
+    float: right;
+    width: 100%;
+    background-color: transparent;
+}
+
+.display li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.display li a:hover {
+    background-color: rgb(123, 85, 12);
+    color: #EEE;
+}
+
+h3 a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #666;
+  font-size: 1.25em;
+}
+
+h3 a:hover {
+  text-decoration: none;
+  font-weight: 400;
+  color: #222;
+  font-size: 1.25em;
+}
+
+.search {
+  margin: 1em;
+  font-size: 1.25em;
+  background-color: rgb(208, 203, 157);
+  padding: 2%;
+}
+
+.search input {
+  border: none;
+  display: block;
+  margin: auto;
+  width: 80%;
+  font-size: 1.25em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1%;
+  text-align: center;
+}
+
+.banner {
+  width: 50%;
+}
+
+.banner img {
+  width: 50%;
+}
+
+.navbar {
+  width: 50%;
+  margin: auto;
+}
+
+.bottom {
+  margin-top: 1em;
+}
+
+hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+}
+
+.footnote {
+  font-size: .75em;
+  font-style: italic;
+  font-weight: 300;
+}
