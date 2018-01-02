@@ -19,10 +19,15 @@ class ComicsController < ApplicationController
 
   def show
     @comic = Comic.find(params[:id])
+    @comment = Comment.new
   end
 
   def index
     @comics = Comic.search(params[:q])
+    @highest_rated = Comic.highest_rated
+    @most_hated = Comic.most_hated
+    @lowest_rated = Comic.lowest_rated
+    @most_loved = Comic.most_loved
   end
 
   def edit

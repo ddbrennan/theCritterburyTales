@@ -10,8 +10,16 @@
   <%= link_to "Add Comic", new_comic_path, class: "submit" %>
 <% end %>
 
+<ul class="superlatives">
+  <li><%= link_to "Highest Rated", @highest_rated, class: "super_button" %></li>
+  <li><%= link_to "Most Likes", @most_loved, class: "super_button" %></li>
+  <li><%= link_to "Most Dislikes", @most_hated, class: "super_button" %></li>
+  <li><%= link_to "Lowest Rated", @lowest_rated, class: "super_button" %></li>
+</ul>
+
+<h2>All Comics:</h2>
 <ul class="display">
 <% @comics.each do |comic| %>
-  <li><%= link_to "#{comic.title} - #{comic.tag.name} - #{comic.created_at.strftime("%m/%d/%Y")}", comic %></li>
+  <li><%= link_to "#{comic.title} - #{comic.tag.name} - #{comic.created_at.strftime("%m/%d/%Y")} - Likes: #{comic.rating}", comic %></li>
 <% end %>
 </ul>

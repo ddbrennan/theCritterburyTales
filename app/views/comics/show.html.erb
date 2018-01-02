@@ -11,6 +11,28 @@
   <%= link_to image_tag("prev.png"), @comic.previous, class: "button prev" %>
 <% end %>
 
+<h2>Comments</h2>
+
+<div class="post_comment">
+<%= form_for @comment do |f| %>
+  <%= f.label :like %>
+  <%= f.check_box :like, {checked: true} %>
+
+  <%= f.text_field :content, placeholder: "Enter Your Comment" %>
+  <%= f.hidden_field :comic_id, :value => @comic.id %>
+  <%= f.submit "Submit Comment", class: "submit" %>
+<% end %>
+</div>
+
+<div class="comments">
+<% @comic.comments.each do |comment| %>
+  <div class="comment">
+    <p><div class=<%= comment.color %>><span></span></div></p>
+    <p><%= comment.content %></p>
+  </div>
+<% end %>
+</div>
+
 <% if current_user %>
   <%= link_to "Edit Comic", edit_comic_path(@comic), class: "submit" %>
   <%= link_to "Delete Comic", comic_path(@comic), method: "delete",
