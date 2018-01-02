@@ -6,8 +6,11 @@ class CommentsController < ApplicationController
     redirect_to @comment.comic
   end
 
-  def delete
-
+  def destroy
+    @comment = Comment.find(params[:id])
+    comic = @comment.comic
+    @comment.delete
+    redirect_to comic
   end
 
   private

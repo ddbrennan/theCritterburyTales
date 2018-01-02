@@ -92,6 +92,8 @@ li a:hover {
   border: none;
   font-family: 'Raleway', sans-serif;
   margin-top: 4%;
+  margin-bottom: 1%;
+  clear: both;
 }
 
 .submit:hover {
@@ -121,6 +123,7 @@ li a:hover {
   width: 50%;
   margin: auto;
   padding: 2%;
+  margin-top: 2%;
 }
 
 .image_field {
